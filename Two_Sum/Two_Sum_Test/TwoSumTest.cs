@@ -19,7 +19,7 @@ namespace Two_Sum_Test
             var actual = target.TwoSum(nums, sum_target);
 
             //assert
-            Assert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

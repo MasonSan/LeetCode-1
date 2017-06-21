@@ -21,5 +21,21 @@ namespace Two_Sum_Test
             //assert
             CollectionAssert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Given_nums_3_2_4_target_6_should_return_1_2()
+        {
+            //arrange
+            var target = new Solution();
+            var nums = new int[] { 3, 2, 4 };
+            var sum_target = 6;
+            var expected = new int[] { 1, 2 };
+
+            //action
+            var actual = target.TwoSum(nums, sum_target);
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }
